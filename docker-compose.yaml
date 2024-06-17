@@ -1,0 +1,9 @@
+version: '3.10'
+
+services:
+  python-container:
+    build: .
+    ports:
+      - "8889:8889"
+    volumes:
+      - ./requirements.txt:/requirements.txt
